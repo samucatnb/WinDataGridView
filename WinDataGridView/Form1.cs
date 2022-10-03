@@ -97,7 +97,7 @@ namespace WinDataGridView
 
     private void dataGridView1_SelectionChanged(object sender, EventArgs e)
     {
-      linhaSelecionada = dataGridView1.CurrentRow.Index;
+    //  linhaSelecionada = dataGridView1.CurrentRow.Index;
 
     }
 
