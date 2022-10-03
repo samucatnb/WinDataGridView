@@ -43,14 +43,17 @@
       this.dataGridView1.Size = new System.Drawing.Size(762, 364);
       this.dataGridView1.TabIndex = 0;
       this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
+      this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
       this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
       // 
       // textBox1
       // 
-      this.textBox1.Location = new System.Drawing.Point(27, 14);
+      this.textBox1.Location = new System.Drawing.Point(12, 12);
       this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(697, 23);
+      this.textBox1.Size = new System.Drawing.Size(762, 23);
       this.textBox1.TabIndex = 1;
+      this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+      this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
       // 
       // Form1
       // 
@@ -61,6 +64,7 @@
       this.Controls.Add(this.dataGridView1);
       this.Name = "Form1";
       this.Text = "Form1";
+      this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
